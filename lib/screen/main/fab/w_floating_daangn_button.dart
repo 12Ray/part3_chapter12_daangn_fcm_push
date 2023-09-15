@@ -4,7 +4,7 @@ import 'package:fast_app_base/screen/main/fab/w_floating_daangn_button.riverpod.
 import 'package:fast_app_base/screen/main/s_main.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../../common/widget/animated_width_collapse.dart';
+import 'package:daangn_ui/widget/animated_width_collapse.dart';
 import '../../write/s_write.dart';
 
 class FloatingDaangnButton extends ConsumerWidget {

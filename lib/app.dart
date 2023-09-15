@@ -1,6 +1,7 @@
+import 'package:daangn_ui/common/theme/custom_theme.dart';
 import 'package:fast_app_base/auth.dart';
 import 'package:fast_app_base/common/common.dart';
-import 'package:fast_app_base/common/widget/w_round_button.dart';
+import 'package:daangn_ui/widget/w_round_button.dart';
 import 'package:fast_app_base/entity/post/vo_simple_product_post.dart';
 import 'package:fast_app_base/screen/main/s_main.dart';
 import 'package:fast_app_base/screen/main/tab/tab_item.dart';
@@ -9,7 +10,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'common/route/transition/fade_transition_page.dart';
-import 'common/theme/custom_theme.dart';
 
 class App extends StatefulWidget {
   ///light, dark 테마가 준비되었고, 시스템 테마를 따라가게 하려면 해당 필드를 제거 하시면 됩니다.

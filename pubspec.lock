@@ -233,6 +233,13 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.17.2"
+  daangn_ui:
+    dependency: "direct main"
+    description:
+      path: "packages/daangn_ui"
+      relative: true
+    source: path
+    version: "0.0.1"
   dart_pubspec_licenses:
     dependency: transitive
     description:
@@ -444,7 +451,7 @@ packages:
     source: hosted
     version: "2.4.0"
   flutter_svg:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: flutter_svg
       sha256: "6ff8c902c8056af9736de2689f63f81c42e2d642b9f4c79dbf8790ae48b63012"
@@ -462,7 +469,7 @@ packages:
     source: sdk
     version: "0.0.0"
   freezed:
-    dependency: "direct main"
+    dependency: "direct dev"
     description:
       name: freezed
       sha256: "2edb9ef971d0f803860ecd9084afd48c717d002141ad77b69be3e976bee7190e"
@@ -510,7 +517,7 @@ packages:
     source: hosted
     version: "10.1.2"
   google_fonts:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: google_fonts
       sha256: "6b6f10f0ce3c42f6552d1c70d2c28d764cf22bb487f50f66cca31dcd5194f4d6"
@@ -704,10 +711,11 @@ packages:
   keyboard_utils_fork:
     dependency: "direct main"
     description:
-      name: keyboard_utils_fork
-      sha256: "8cd85549a8dd5dcf4aed09057430fbbea875c8cc0b9c0ddc8f85964da49fd7da"
-      url: "https://pub.dev"
-    source: hosted
+      path: "."
+      ref: master
+      resolved-ref: "8b9297a2b44de7c844371770f14a4fbd6d0921e9"
+      url: "https://github.com/BansookNam/keyboard_utils.git"
+    source: git
     version: "0.0.4"
   lints:
     dependency: transitive
@@ -934,7 +942,7 @@ packages:
     source: hosted
     version: "1.2.3"
   quiver:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: quiver
       sha256: b1c1ac5ce6688d77f65f3375a9abb9319b3cb32486bdc7a1e0fdf004d7ba4e47
@@ -1307,7 +1315,7 @@ packages:
     source: hosted
     version: "2.1.4"
   velocity_x:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: velocity_x
       sha256: "16afc758004143b2f5f6955c39ac4a7381c367067ee9f005764182a4624a44cb"
@@ -1403,5 +1411,5 @@ packages:
     source: hosted
     version: "3.1.2"
 sdks:
-  dart: ">=3.1.0-185.0.dev <4.0.0"
+  dart: ">=3.1.0 <4.0.0"
   flutter: ">=3.7.0"

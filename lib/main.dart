@@ -1,5 +1,5 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:fast_app_base/common/theme/custom_theme_app.dart';
+import 'package:daangn_ui/common/theme/custom_theme_app.dart';
 import 'package:flutter/material.dart';
 import 'package:timeago/timeago.dart';
 

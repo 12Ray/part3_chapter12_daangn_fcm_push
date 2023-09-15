@@ -11,7 +11,7 @@ import 'package:fast_app_base/app.dart';
 import 'package:fast_app_base/common/common.dart';
 import 'package:fast_app_base/common/data/preference/app_preferences.dart';
 import 'package:fast_app_base/common/language/language.dart';
-import 'package:fast_app_base/common/theme/custom_theme.dart';
+import 'package:daangn_ui/common/theme/custom_theme.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:isar/isar.dart';
 import 'package:shared_preferences/shared_preferences.dart';
