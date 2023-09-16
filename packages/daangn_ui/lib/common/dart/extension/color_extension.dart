@@ -4,8 +4,8 @@ import 'package:daangn_ui/common/dart/extension/context_extension.dart';
 import 'package:flutter/material.dart';
 
 extension ColorExtension on Color {
-  Color getSwatchByBrightness(int swatchValue) {
-    final Brightness brightness = App.scaffoldMessengerKey.currentContext!.themeType.themeData.brightness;
+  Color getSwatchByBrightness(BuildContext context, int swatchValue) {
+    final Brightness brightness = context.themeType.themeData.brightness;
     if (brightness == Brightness.light) {
       return swatchShade(swatchValue);
     } else {

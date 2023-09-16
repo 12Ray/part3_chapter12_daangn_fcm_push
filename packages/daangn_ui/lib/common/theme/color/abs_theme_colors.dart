@@ -1,7 +1,7 @@
-import 'package:fast_app_base/common/constant/app_colors.dart';
 import 'package:flutter/material.dart';
 
-export 'package:fast_app_base/common/constant/app_colors.dart';
+import '../../constant/app_colors.dart';
+
 export 'dart:ui' hide TextDirection;
 
 typedef ColorProvider = Color Function();

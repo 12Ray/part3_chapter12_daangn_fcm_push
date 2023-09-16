@@ -1,6 +1,8 @@
 import 'package:daangn_ui/common/theme/color/abs_theme_colors.dart';
 import 'package:flutter/material.dart';
 
+import '../../constant/app_colors.dart';
+
 class DarkAppColors extends AbstractThemeColors {
   const DarkAppColors();
 

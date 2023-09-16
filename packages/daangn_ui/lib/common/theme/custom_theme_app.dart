@@ -6,16 +6,17 @@ import 'theme_util.dart';
 
 class CustomThemeApp extends StatefulWidget {
   final Widget child;
+  final CustomTheme? defaultTheme;
+  final CustomTheme? savedTheme;
 
-  const CustomThemeApp({Key? key, required this.child}) : super(key: key);
+  const CustomThemeApp({Key? key, required this.child, this.defaultTheme, this.savedTheme}) : super(key: key);
 
   @override
   State<CustomThemeApp> createState() => _CustomThemeAppState();
 }
 
 class _CustomThemeAppState extends State<CustomThemeApp> {
-  late CustomTheme theme = savedTheme ?? defaultTheme ?? systemTheme;
-  final CustomTheme? defaultTheme = App.defaultTheme;
+  late CustomTheme theme = widget.savedTheme ?? widget.defaultTheme ?? systemTheme;
 
   void handleChangeTheme(CustomTheme theme) {
     setState(() => this.theme = theme);
@@ -29,8 +30,6 @@ class _CustomThemeAppState extends State<CustomThemeApp> {
       child: widget.child,
     );
   }
-
-  CustomTheme? get savedTheme => Prefs.appTheme.get();
 
   CustomTheme get systemTheme {
     switch (ThemeUtil.systemBrightness) {

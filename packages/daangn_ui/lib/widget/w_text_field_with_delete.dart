@@ -1,11 +1,8 @@
 import 'dart:ui' as ui;
 
-import 'package:daangn_ui/common/dart/extension/context_extension.dart';
-import 'package:daangn_ui/widget/w_tap.dart';
+import 'package:daangn_ui/common/common.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:quiver/strings.dart';
 
 
 class TextFieldWithDelete extends StatefulWidget {
@@ -164,7 +161,7 @@ class TextFieldWithDeleteState extends State<TextFieldWithDelete> {
                               child: Padding(
                                 padding: EdgeInsets.only(right: widget.deleteRightPadding),
                                 child: SvgPicture.asset(
-                                  '$basePath/icon/delete_x.svg',
+                                  '$baseUiPath/icon/delete_x.svg',
                                   colorFilter: ui.ColorFilter.mode(
                                       context.appColors.iconButton, ui.BlendMode.srcIn),
                                 ),

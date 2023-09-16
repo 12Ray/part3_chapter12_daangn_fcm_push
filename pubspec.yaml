@@ -49,7 +49,6 @@ dependencies:
 
   #ui - resource
   eva_icons_flutter: ^3.1.0
-  easy_localization: ^3.0.2
   flutter_cache_manager: ^3.3.0
 
   #ui - widget
