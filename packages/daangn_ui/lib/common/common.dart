@@ -1,4 +1,3 @@
-import 'package:google_fonts/google_fonts.dart';
 
 export 'dart:async';
 
@@ -7,6 +6,7 @@ export 'package:flutter_svg/flutter_svg.dart';
 export 'package:quiver/strings.dart';
 export 'package:velocity_x/velocity_x.dart';
 
+export 'package:google_fonts/google_fonts.dart';
 export 'package:daangn_ui/common/dart/extension/animation_controller_extension.dart';
 export 'package:daangn_ui/common/dart/extension/collection_extension.dart';
 export 'package:daangn_ui/common/dart/extension/context_extension.dart';
