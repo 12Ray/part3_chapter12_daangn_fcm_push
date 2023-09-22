@@ -9,6 +9,7 @@ import 'package:fast_app_base/screen/post_detail_riverpod/s_post_detail_with_riv
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import 'common/fcm/fcm_manager.dart';
 import 'common/route/transition/fade_transition_page.dart';
 
 class App extends StatefulWidget {
@@ -32,6 +33,8 @@ class AppState extends State<App> with WidgetsBindingObserver, Nav {
   @override
   void initState() {
     super.initState();
+    FcmManager.requestPermission();
+    FcmManager.initialize();
     WidgetsBinding.instance.addObserver(this);
   }
 
