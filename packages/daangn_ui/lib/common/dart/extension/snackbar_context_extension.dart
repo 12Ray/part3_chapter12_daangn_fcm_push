@@ -6,8 +6,9 @@ import '../../../widget/w_tap.dart';
 
 extension SnackbarContextExtension on BuildContext {
   ///Scaffold안에 Snackbar를 보여줍니다.
-  void showSnackbar(String message, {Widget? extraButton}) {
-    _showSnackBarWithContext(
+  ScaffoldFeatureController<SnackBar, SnackBarClosedReason> showSnackbar(String message,
+      {Widget? extraButton}) {
+    return _showSnackBarWithContext(
       this,
       _SnackbarFactory.createSnackBar(this, message, extraButton: extraButton),
     );
@@ -31,9 +32,12 @@ extension SnackbarContextExtension on BuildContext {
   }
 }
 
-void _showSnackBarWithContext(BuildContext context, SnackBar snackbar) {
+ScaffoldFeatureController<SnackBar, SnackBarClosedReason> _showSnackBarWithContext(
+    BuildContext context, SnackBar snackbar) {
   ScaffoldMessenger.of(context).removeCurrentSnackBar();
-  ScaffoldMessenger.of(context).showSnackBar(snackbar);
+  ScaffoldFeatureController<SnackBar, SnackBarClosedReason> controller =
+      ScaffoldMessenger.of(context).showSnackBar(snackbar);
+  return controller;
 }
 
 class _SnackbarFactory {
